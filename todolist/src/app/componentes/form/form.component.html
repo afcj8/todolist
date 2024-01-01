@@ -1,0 +1,20 @@
+<div class="container">
+    <form #meuForm="ngForm" class="form">
+        <!-- Campo nome -->
+        <div class="mb-3">
+          <label for="Input1" class="form-label">Nome da tarefa:</label>
+          <input type="text" class="form-control" id="Input1" name="nome" ngModel #nome="ngModel" required/>
+          <p class="alert alert-danger" *ngIf="nome.invalid && (nome.dirty || nome.touched)">Campo Obrigatório</p>
+        </div>
+        <!-- Campo data -->
+        <div class="mb-3">
+          <label for="Input2" class="form-label">Concluir até:</label>
+          <input type="date" class="form-control" id="Input2" name="data" ngModel #data="ngModel" />
+        </div>
+        <!-- Adicionar -->
+        <div class="button">
+          <Button [disabled]="!meuForm.valid" (click)="adicionar(meuForm)" class="btn">Adicionar</Button>
+        </div>
+        <hr>
+    </form>
+</div>

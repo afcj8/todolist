@@ -1,0 +1,19 @@
+.container {
+    margin-top: 18px;
+}
+
+input, p {
+    padding: 8px;
+}
+
+.button {
+    margin-bottom: 16px;
+}
+
+.btn {
+    background: #424649;
+    border-radius: 10px;
+    color: #FFF;
+    margin-right: 12px;
+    padding: 8px 20px 8px 20px;
+}
