@@ -1,0 +1,39 @@
+<!--<app-form (carregar)="onClick()"></app-form>-->
+
+<div class="container">
+  <div class="row">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Concluir até</th>
+            <th scope="col">Status</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tarefa of tarefas">
+            <th scope="row">{{ tarefa.nome }}</th>
+            <td>{{ tarefa.data }}</td>
+            <td>
+              <div class="status" [ngClass]="{'execucao': tarefa.status == 'Em execução', 
+                'concluida': tarefa.status == 'Concluída', 
+                'pausada': tarefa.status == 'Pausada'}">
+                {{ tarefa.status }}
+              </div>
+            </td>
+            <td>
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" (click)="atualizar(tarefa, 'Concluída')">Concluída</a></li>
+                  <li><a class="dropdown-item" (click)="atualizar(tarefa, 'Pausada')">Pausada</a></li>
+                  <li><a class="dropdown-item" (click)="delete(tarefa)">Excluir</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
