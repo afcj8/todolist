@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './componentes/form/form.component';
 import { ListaComponent } from './componentes/lista/lista.component';
 import { GradeComponent } from './componentes/grade/grade.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     ListaComponent,
-    GradeComponent
+    GradeComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
