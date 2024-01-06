@@ -3,19 +3,19 @@
     {
       "nome": "Apresentação PDS",
       "data": "2024-01-03",
-      "status": "Em execução",
+      "status": "Concluída",
       "id": 1
-    },
-    {
-      "id": 2,
-      "nome": "Prova - Processos de Software",
-      "data": "2024-01-04",
-      "status": "Em execução"
     },
     {
       "id": 3,
       "nome": "Recuperação de ED II",
       "data": "2024-01-10",
+      "status": "Concluída"
+    },
+    {
+      "id": 4,
+      "nome": "Teste",
+      "data": "2024-01-20",
       "status": "Em execução"
     }
   ]

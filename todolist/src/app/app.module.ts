@@ -7,12 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormComponent } from './componentes/form/form.component';
 import { ListaComponent } from './componentes/lista/lista.component';
+import { GradeComponent } from './componentes/grade/grade.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    ListaComponent
+    ListaComponent,
+    GradeComponent
   ],
   imports: [
     BrowserModule,
