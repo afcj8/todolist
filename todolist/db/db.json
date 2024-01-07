@@ -7,12 +7,6 @@
       "id": 1
     },
     {
-      "id": 3,
-      "nome": "Recuperação de ED II",
-      "data": "2024-01-10",
-      "status": "Concluída"
-    },
-    {
       "id": 5,
       "nome": "Estudar Ruby",
       "data": "2024-01-31",
@@ -22,19 +16,7 @@
       "id": 6,
       "nome": "Estudar FlutterFlow",
       "data": "2024-01-31",
-      "status": "Em execução"
-    },
-    {
-      "id": 7,
-      "nome": "Ruby on Rails",
-      "data": "2024-01-30",
-      "status": "Em execução"
-    },
-    {
-      "id": 8,
-      "nome": "teste",
-      "data": "2024-12-03",
-      "status": "Em execução"
+      "status": "Pausada"
     }
   ]
 }

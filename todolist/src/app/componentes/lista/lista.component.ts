@@ -25,7 +25,7 @@ export class ListaComponent implements OnInit {
   }
 
   atualizar(tarefa: Tarefa, novoStatus: string) {
-    if (novoStatus === 'Concluída' || novoStatus === 'Pausada') {
+    if (novoStatus === 'Concluída' || novoStatus === 'Pausada' || novoStatus === 'Em execução') {
       tarefa.status = novoStatus;
       this.service.atualizarTarefa(tarefa).subscribe(data => {
         console.log('Tarefa atualizada com sucesso!');
