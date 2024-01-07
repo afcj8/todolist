@@ -18,7 +18,7 @@ export class ListaComponent implements OnInit {
     })
   }  
 
-  onClick() {
+  carregar() {
     this.service.getTarefas().subscribe(data => {
       this.tarefas = data;
     })
@@ -52,5 +52,15 @@ export class ListaComponent implements OnInit {
     } else {
       console.error("Tarefa ou ID indefinido.");
     }
+  }
+
+  formatarData = (data: Date) => {
+    const dataf = new Date(data);
+  
+    const dia = String(dataf.getDate()).padStart(2, '0');
+    const mes = String(dataf.getMonth() + 1).padStart(2, '0');
+    const ano = dataf.getFullYear();
+  
+    return `${dia}/${mes}/${ano}`;
   }
 }

@@ -1,4 +1,4 @@
-<app-form (carregar)="onClick()"></app-form>
+<app-form (carregar)="carregar()"></app-form>
 
 <div class="container">
   <div class="row">
@@ -14,7 +14,7 @@
         <tbody>
           <tr *ngFor="let tarefa of tarefas">
             <th scope="row">{{ tarefa.nome }}</th>
-            <td>{{ tarefa.data }}</td>
+            <td>{{ formatarData(tarefa.data) }}</td>
             <td>
               <div class="status" [ngClass]="{'execucao': tarefa.status == 'Em execução', 
                 'concluida': tarefa.status == 'Concluída', 
