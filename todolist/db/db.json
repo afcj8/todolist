@@ -1,22 +1,3 @@
 {
-  "tarefas": [
-    {
-      "nome": "Apresentação PDS",
-      "data": "2024-01-03",
-      "status": "Concluída",
-      "id": 1
-    },
-    {
-      "id": 5,
-      "nome": "Estudar Ruby",
-      "data": "2024-01-31",
-      "status": "Em execução"
-    },
-    {
-      "id": 6,
-      "nome": "Estudar FlutterFlow",
-      "data": "2024-01-31",
-      "status": "Pausada"
-    }
-  ]
+  "tarefas": []
 }
